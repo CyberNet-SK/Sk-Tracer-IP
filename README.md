@@ -17,6 +17,6 @@ Copy and paste the following commands one by one:
 pkg update && pkg upgrade
 pkg install python git -y
 pip install requests colorama
-git clone [https://github.com/CyberNet-SK/Sk-Tracer-IP](https://github.com/CyberNet-SK/Sk-Tracer-IP)
+git clone https://github.com/CyberNet-SK/Sk-Tracer-IP.git
 cd Sk-Tracer-IP
 python Sk-Tracer-IP.py
