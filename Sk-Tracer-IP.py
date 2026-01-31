@@ -5,10 +5,10 @@ import requests
 import json
 from colorama import Fore, Style, init
 
-# কালার ইনিশিয়ালাইজেশন
+# 
 init(autoreset=True)
 
-# কালার ভেরিয়েবল
+# 
 B = Fore.BLUE + Style.BRIGHT
 W = Fore.WHITE + Style.BRIGHT
 R = Fore.RED + Style.BRIGHT
@@ -29,7 +29,7 @@ def banner():
     ╚██████╗██║  ██╗    ███████║██║        ██║   
      ╚═════╝╚═╝  ╚═╝    ╚══════╝╚═╝        ╚═╝   
     {Y}--------------------------------------------------
-    {G}>> Developer : SK
+    {G}>> Developer : SHEIKH SABBIR
     {G}>> Tool Name  : SK-TRACER-IP (Advanced Edition)
     {C}>> Status     : Authorized Personnel Only
     {Y}--------------------------------------------------
@@ -37,12 +37,12 @@ def banner():
 
 def ip_tracer():
     print(f"\n{C}[*] {W}Enter IP Address to Track (Leave blank for yours)")
-    ip = input(f"{B}SK-TRACER > {W}").strip() # .strip() যোগ করা হয়েছে স্পেস রিমুভ করতে
+    ip = input(f"{B}SK-TRACER > {W}").strip() # .strip() 
     
     print(f"\n{Y}[+] {G}Fetching Advanced Data... Please Wait...\n")
     time.sleep(1.5)
     
-    # ইউজার যদি সরাসরি এন্টার চাপে, তবে ip এর মান হবে খালি। API তখন অটোমেটিক নিজের আইপি নিবে।
+    # 
     api_url = f"http://ip-api.com/json/{ip}?fields=status,message,country,countryCode,regionName,city,district,zip,lat,lon,timezone,isp,org,as,query"
     
     try:
@@ -88,7 +88,7 @@ def main_menu():
         elif choice == "0":
             print(f"\n{G}Thanks for using Sk-Tracer-IP! Goodbye.")
             sys.exit()
-        elif choice == "": # এটি মেইন মেনুতে ভুলবশত এন্টার চাপলে হ্যান্ডেল করবে
+        elif choice == "": # 
             continue
         else:
             print(f"{R}[!] Invalid Choice!")
